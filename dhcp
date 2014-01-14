@@ -23,8 +23,9 @@ config dnsmasq
 config dhcp lan
 	option interface	lan
 	option start 	        11
-	option limit            8	
+	option limit            8 	
 	option leasetime	12h
+        option ignore           1
 	
 config 'host'
         option 'name' 'macbook'
@@ -41,10 +42,10 @@ config 'host'
 	option 'ip'   '10.21.1.18'
 	option 'mac'  'c8:19:f7:89:16:c1'
 	
-config 'host'
-	option 'name' 'asus'
-	option 'ip'   '10.21.1.21'
-	option 'mac'  'e0:cb:4e:a5:f3:9c 1c:4b:d6:5b:ab:2e'
+#config 'host'
+#	option 'name' 'asus'
+#	option 'ip'   '10.21.1.21'
+#	option 'mac'  'e0:cb:4e:a5:f3:9c 1c:4b:d6:5b:ab:2e'
 
 config dhcp wan
 	option interface	wan

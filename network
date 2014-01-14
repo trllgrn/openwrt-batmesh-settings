@@ -11,10 +11,9 @@ config interface 'lan'
 	option proto 'static'
 	option netmask '255.255.255.0'
 	option ipaddr '10.21.1.10'
+        option dns     '8.8.8.8'
+        option gateway '10.21.1.1'
 
 config interface 'mesh'
         option mtu '1528'
         option proto 'none'
-
-config interface 'wwan'
-        option proto 'dhcp'        

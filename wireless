@@ -22,7 +22,7 @@ config wifi-iface
         option mode 'sta'
         option bssid 'F8:E4:FB:08:80:69'
         option key '0F93763C9E'
-        option disabled 0
+        option disabled 1
 
 #the mesh set up
 config wifi-iface
@@ -42,4 +42,4 @@ config wifi-iface
         option ssid       'tpl3040-10'
         option encryption ' psk2'
         option key        'Lakers24'
-        option disabled 1 
+        option disabled 0 
